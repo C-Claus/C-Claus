@@ -1,8 +1,8 @@
 Several tooling and scripts I have created
 
-* [Autodesk Revit Add-In](#Basic-BIM-Checker-for-Autodesk-Revit)<br>
-* [Autodesk Navisworks Manage Tool](#Basic-BIM-Checker-for-Navisworks-Manage)<br>
-* [Creating Smart Views for BimCollabZoom](#Creating-XML-Smart-Views-for-BimCollabZoom)<br>
+* [Autodesk Revit Add-In](#basic-bim-checker-for-autodesk-revit)<br>
+* [Autodesk Navisworks Manage Tool](#basic-bim-checker-for-navisworks-manage)<br>
+* [Creating Smart Views for BimCollabZoom](#creating-xml-smart-views-for-bimcollabzoom)<br>
 * Creating QR codes from an IFC file<br>
 * Using IFC as a Document Management System<br>
 * Creating a folder structure from an Excel classification file<br>
