@@ -43,8 +43,10 @@ BimCollabZoom is software to view and coordinate IFC files. In my opinion it's t
 Screenshot of BimCollabZoom 
 
 
+
 ![spaces](/images/spaces.PNG)
 The IfcSpaces visualized, not that it is hard to see which IfcSpace are contained within the IfcZone. And on what IfcBuildingStorey they are located.
+
 
 
 ![smart_view](/images/smart_view.png)
