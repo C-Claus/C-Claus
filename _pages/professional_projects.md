@@ -1,3 +1,4 @@
+.
 
 # Several tooling and scripts I have created
 
