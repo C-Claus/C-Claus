@@ -48,4 +48,20 @@ The IfcSpaces visualized, not that it is hard to see which IfcSpace are containe
 ![spaces](/images/smart_view.PNG)
 The IfcSpaces and IfcZone visualized with color coding, the Smart View has been created with a Python script.
 
+```
+import ifcopenshell
+import lxml 
+from lxml import etree as ET
+import os 
+import uuid
+from datetime import datetime
+from collections import defaultdict
 
+
+ifcfile = ifcopenshell.open('C:\\Users\\CClaus\\Desktop\\Flat 11\\ruimtemodel_flat_11.ifc')
+
+products = ifcfile.by_type('IfcProduct')
+zones = ifcfile.by_type('IfcZone')
+building_stories = ifcfile.by_type('IfcBuildingStorey')
+```
+The imports used to create the Smart Views
