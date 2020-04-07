@@ -20,6 +20,7 @@ A Revit-Add in which the user can make a visual check if the model is according 
 
 ![Revit Add-In](/images/Addln.png)
 
+-------
 
 # Basic-BIM-Checker-for-Navisworks-Manage
 [< Back to top](#several-tooling-and-scripts-i-have-created)
@@ -30,6 +31,9 @@ A stand-alone Navisworks tool which makes Search Sets according to the Informati
 
 ![Revit Add-In Navis](/images/nav_app.png)
 
+-------
+
 # Creating-XML-Smart-Views-for-BimCollabZoom
 [< Back to top](#several-tooling-and-scripts-i-have-created)
 IFC
+![Revit Add-In Navis](/images/spaces.png)
