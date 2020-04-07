@@ -42,8 +42,10 @@ BimCollabZoom is software to view and coordinate IFC files. In my opinion it's t
 ![spaces](/images/screenshot_bimcollabzoom.png)
 Screenshot of BimCollabZoom 
 
+
 ![spaces](/images/spaces.PNG)
 The IfcSpaces visualized, not that it is hard to see which IfcSpace are contained within the IfcZone. And on what IfcBuildingStorey they are located.
+
 
 ![smart_view](/images/smart_view.png)
 The IfcSpaces and IfcZone visualized with color coding, the Smart View has been created with a Python script.
@@ -67,3 +69,18 @@ zones = ifcfile.by_type('IfcZone')
 building_stories = ifcfile.by_type('IfcBuildingStorey')
 ```
 Using IfcOpenShell to retrieve the information in IFC to create the data written to the XML file.
+
+
+```
+def create_xml(file_name, building_storey, zone):
+  
+    root = ET.Element('SMARTVIEWSETS')
+    doc = ET.SubElement(root, "SMARTVIEWSET")
+ 
+    title = ET.SubElement(doc, "TITLE").text = "location_" + building_storey
+    description = ET.SubElement(doc, "DESCRIPTION").text = "Description will follow" 
+    guid = ET.SubElement(doc, "GUID" ).text = str(uuid.uuid4())
+    smartviews = ET.SubElement(doc, "SMARTVIEWS")
+    
+```
+Using the lxml module to initialize the xml within a method.
