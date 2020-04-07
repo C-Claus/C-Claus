@@ -38,7 +38,7 @@ A stand-alone Navisworks tool which makes Search Sets according to the Informati
 
 BimCollabZoom is software to view and coordinate IFC files. In my opinion it's the most complete and easy-to-use IFC viewer from all IFC viewers I know. Reasons for this is that the user is allowed to create Smart Views and BCF files for free. The Smart Views are XML files which gave me an idea. I can use the lxml Python module to create and modify the Smart Views. Especially with large repetive buildings tedious task can become interesting challenges and at the same time you can thoroughly check the IFC model for complete and correctness.
 
-![spaces](/images/screenshot_bimcollabzoom.PNG)
+![spaces](/images/screenshot_bimcollabzoom.png)
 
 ![spaces](/images/spaces.PNG)
 
