@@ -73,18 +73,17 @@ building_stories = ifcfile.by_type('IfcBuildingStorey')
 Using IfcOpenShell to retrieve the information in IFC to create the data written to the XML file.
 
 
-```
-def create_xml(file_name, building_storey, zone):
-  
-    root = ET.Element('SMARTVIEWSETS')
-    doc = ET.SubElement(root, "SMARTVIEWSET")
+
+    def create_xml(file_name, building_storey, zone):
+        root = ET.Element('SMARTVIEWSETS')
+        doc = ET.SubElement(root, "SMARTVIEWSET")
  
-    title = ET.SubElement(doc, "TITLE").text = "location_" + building_storey
-    description = ET.SubElement(doc, "DESCRIPTION").text = "Description will follow" 
-    guid = ET.SubElement(doc, "GUID" ).text = str(uuid.uuid4())
-    smartviews = ET.SubElement(doc, "SMARTVIEWS")
+        title = ET.SubElement(doc, "TITLE").text = "location_" + building_storey
+        description = ET.SubElement(doc, "DESCRIPTION").text = "Description will follow" 
+        guid = ET.SubElement(doc, "GUID" ).text = str(uuid.uuid4())
+        smartviews = ET.SubElement(doc, "SMARTVIEWS")
     
-```
+
 Using the lxml module to initialize the xml within a method.
 
 ```
