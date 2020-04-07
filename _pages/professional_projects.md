@@ -45,7 +45,7 @@ Screenshot of BimCollabZoom
 ![spaces](/images/spaces.PNG)
 The IfcSpaces visualized, not that it is hard to see which IfcSpace are contained within the IfcZone. And on what IfcBuildingStorey they are located.
 
-![spaces](/images/spaces.PNG)
+![spaces](/images/smart_view.PNG)
 The IfcSpaces and IfcZone visualized with color coding, the Smart View has been created with a Python script.
 
 
