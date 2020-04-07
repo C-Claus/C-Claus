@@ -12,7 +12,7 @@
 -------
 
 # Basic-BIM-Checker-for-Autodesk-Revit
-* [< Back to top](#several-tooling-and-scripts-i-have-created)
+[< Back to top](#several-tooling-and-scripts-i-have-created)
 
 A Revit-Add in which the user can make a visual check if the model is according the Information Delivery Manual
 
@@ -31,5 +31,5 @@ A stand-alone Navisworks tool which makes Search Sets according to the Informati
 ![Revit Add-In Navis](/images/nav_app.png)
 
 # Creating-XML-Smart-Views-for-BimCollabZoom
-
+[< Back to top](#several-tooling-and-scripts-i-have-created)
 IFC
