@@ -86,3 +86,17 @@ def create_xml(file_name, building_storey, zone):
     
 ```
 Using the lxml module to initialize the xml within a method.
+
+```
+    for i in zone:
+        smartview = ET.SubElement(smartviews, "SMARTVIEW")
+        smartview_title = ET.SubElement(smartview, "TITLE").text = 'Building number: ' + str(i) #+ str(i.Name) 
+        smartview_description = ET.SubElement(smartview, "DESCRIPTION")
+        smartview_creator = ET.SubElement(smartview, "CREATOR").text = "C. Claus"
+        smartview_creation_date = ET.SubElement(smartview, "CREATIONDATE").text = day + " " + month + " " + year
+        smartview_modifier = ET.SubElement(smartview, "MODIFIER").text = "C. Claus"
+        smartview_modification_date = ET.SubElement(smartview, "MODIFICATIONDATE").text = day + " " + month + " " + year
+        smartview_guid = ET.SubElement(smartview, "GUID").text = str(uuid.uuid4())
+ ```    
+ 
+ Looping over the zone within to create the names of the SmartViews.
