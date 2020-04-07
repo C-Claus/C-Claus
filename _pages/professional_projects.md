@@ -36,4 +36,4 @@ A stand-alone Navisworks tool which makes Search Sets according to the Informati
 # Creating-XML-Smart-Views-for-BimCollabZoom
 [< Back to top](#several-tooling-and-scripts-i-have-created)
 IFC
-![Revit Add-In Navis](/images/spaces.png)
+![spaces](/images/spaces.png)
