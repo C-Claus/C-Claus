@@ -53,13 +53,11 @@ The IfcSpaces visualized, not that it is hard to see which IfcSpace are containe
 The IfcSpaces and IfcZone visualized with color coding, the Smart View has been created with a Python script.
 
 ```
-import ifcopenshell
-import lxml 
-from lxml import etree as ET
 import os 
+import lxml 
 import uuid
-from datetime import datetime
-from collections import defaultdict
+import ifcopenshell
+
 ```
 The imports used to create the Smart Views
 
@@ -96,6 +94,96 @@ Using the lxml module to initialize the xml within a method.
         smartview_modifier = ET.SubElement(smartview, "MODIFIER").text = "C. Claus"
         smartview_modification_date = ET.SubElement(smartview, "MODIFICATIONDATE").text = day + " " + month + " " + year
         smartview_guid = ET.SubElement(smartview, "GUID").text = str(uuid.uuid4())
+        
+        first_rule(smartview, rules,  building_storey)
+        second_rule(smartview, rules, zones=i)
+        
+    tree = ET.ElementTree(root)
+    tree.write('bcsv_files/' + str(file_name), encoding="utf-8", xml_declaration=True, pretty_print=True)
+   
+    create_xml_declaration(file_path_xml='bcsv_files/' + str(file_name))
  ```    
  
  Looping over the zone within to create the names of the SmartViews.
+
+```
+def first_rule(smartview, rules, building_storey): 
+    
+        rule = ET.SubElement(rules, "RULE")
+
+        ifctype = ET.SubElement(rule, "IFCTYPE").text = 'Building Story'
+        
+        property = ET.SubElement(rule, "PROPERTY")
+        property_name = ET.SubElement(property, "NAME").text= "Name"
+        propertyset_name = ET.SubElement(property, "PROPERTYSETNAME").text = "Summary"
+        property_type = ET.SubElement(property, "TYPE").text = "Summary"
+        property_value_type = ET.SubElement(property, "VALUETYPE").text = "StringValue"
+        property_unit = ET.SubElement(property, "UNIT").text = "None"
+        
+        
+        condition = ET.SubElement(rule, "CONDITION")
+        condition_type = ET.SubElement(condition, "TYPE").text = "StartsWith"
+        condition_value = ET.SubElement(condition, "VALUE").text =  building_storey
+        
+        action = ET.SubElement(rule, "ACTION")
+        action_type = ET.SubElement(action, "TYPE").text = "AddSetColored"
+        
+        r_color = ET.SubElement(action, "R").text = "145"
+        g_color = ET.SubElement(action, "G").text = "145"
+        b_color = ET.SubElement(action, "B").text = "145"
+```
+Creating a method for the first rule, this one makes a Smart View for the Building Storey.
+
+
+
+```
+def second_rule(smartview, rules, zones):     
+    
+        #rules = ET.SubElement(smartview, "RULES")
+        rule = ET.SubElement(rules, "RULE")
+
+        ifctype = ET.SubElement(rule, "IFCTYPE").text = 'Zone'
+        
+        property = ET.SubElement(rule, "PROPERTY")
+        property_name = ET.SubElement(property, "NAME").text= "Name"
+        propertyset_name = ET.SubElement(property, "PROPERTYSETNAME").text = "Summary"
+        property_type = ET.SubElement(property, "TYPE").text = "Summary"
+        property_value_type = ET.SubElement(property, "VALUETYPE").text = "StringValue"
+        property_unit = ET.SubElement(property, "UNIT").text = "None"
+        
+        
+        condition = ET.SubElement(rule, "CONDITION")
+        condition_type = ET.SubElement(condition, "TYPE").text = "StartsWith"
+        condition_value = ET.SubElement(condition, "VALUE").text =  zones
+        
+        action = ET.SubElement(rule, "ACTION")
+        action_type = ET.SubElement(action, "TYPE").text = "AddSetColored"
+        
+        r_color = ET.SubElement(action, "R").text = "255"
+        g_color = ET.SubElement(action, "G").text = "0"
+        b_color = ET.SubElement(action, "B").text = "0" 
+```
+
+Creating a method for the second Smart View
+
+```
+def create_xml_declaration(file_path_xml):
+    
+    xml_declaration =   """<?xml version="1.0"?>
+    <bimcollabsmartviewfile>
+    <version>5</version>
+    <applicationversion>Win - Version: 3.1 (build 3.1.13.217)</applicationversion>
+</bimcollabsmartviewfile>
+    """
+    
+    with open(file_path_xml, 'r') as xml_file:
+        xml_data = xml_file.readlines()
+        
+        
+    xml_data[0] = xml_declaration + '\n'
+    
+    with open(file_path_xml, 'w') as xml_file:
+        xml_file.writelines(xml_data)    
+```
+
+Writing the XML file header.
