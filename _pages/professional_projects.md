@@ -5,6 +5,7 @@
 * [Autodesk Revit Add-In](#basic-bim-checker-for-autodesk-revit)<br>
 * [Autodesk Navisworks Manage Tool](#basic-bim-checker-for-navisworks-manage)<br>
 * [Creating Smart Views for BimCollabZoom](#creating-xml-smart-views-for-bimcollabzoom)<br>
+* [Adding data to an existing IFC](#adding-data-to-an-existing-ifc)<br>
 * Creating QR codes from an IFC file<br>
 * Using IFC as a Document Management System<br>
 * Creating a folder structure from an Excel classification file<br>
