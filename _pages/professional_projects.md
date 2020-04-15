@@ -59,6 +59,10 @@ import lxml
 import uuid
 import ifcopenshell
 
+from lxml import etree as ET
+from datetime import datetime
+from collections import defaultdict
+
 ```
 The imports used to create the Smart Views
 
@@ -68,8 +72,18 @@ ifcfile = ifcopenshell.open('C:\\Users\\CClaus\\Desktop\\Flat 11\\ruimtemodel_fl
 products = ifcfile.by_type('IfcProduct')
 zones = ifcfile.by_type('IfcZone')
 building_stories = ifcfile.by_type('IfcBuildingStorey')
+
+building_storey_list = []
+
+for i in building_stories:
+    building_storey_list.append(i.Name)
+
+now = datetime.now()
+year = now.strftime("%Y")
+month = now.strftime("%m")
+day = now.strftime("%d")
 ```
-Using IfcOpenShell to retrieve the information in IFC to create the data written to the XML file.
+Using IfcOpenShell to retrieve the information in IFC to create the data written to the XML file. Including the initialisation of some global variables.
 
 
 
@@ -97,7 +111,10 @@ Using the lxml module to initialize the xml within a method.
         smartview_guid = ET.SubElement(smartview, "GUID").text = str(uuid.uuid4())
         
         first_rule(smartview, rules,  building_storey)
+        
         second_rule(smartview, rules, zones=i)
+        
+        third_rule(smartview, rules, building_storey='building storey')
         
     tree = ET.ElementTree(root)
     tree.write('bcsv_files/' + str(file_name), encoding="utf-8", xml_declaration=True, pretty_print=True)
@@ -167,6 +184,35 @@ def second_rule(smartview, rules, zones):
 
 Creating a method for the second Smart View
 
+
+    def third_rule(smartview, rules, building_storey): 
+
+        for b in building_storey_list:
+            rule = ET.SubElement(rules, "RULE")
+    
+            ifctype = ET.SubElement(rule, "IFCTYPE").text = 'Building Story'
+            
+            property = ET.SubElement(rule, "PROPERTY")
+            property_name = ET.SubElement(property, "NAME").text= "Name"
+            propertyset_name = ET.SubElement(property, "PROPERTYSETNAME").text = "Summary"
+            property_type = ET.SubElement(property, "TYPE").text = "Summary"
+            property_value_type = ET.SubElement(property, "VALUETYPE").text = "StringValue"
+            property_unit = ET.SubElement(property, "UNIT").text = "None"
+            
+            
+            condition = ET.SubElement(rule, "CONDITION")
+            condition_type = ET.SubElement(condition, "TYPE").text = "StartsWith"
+            condition_value = ET.SubElement(condition, "VALUE").text =  b #uilding_storey
+            
+            action = ET.SubElement(rule, "ACTION")
+            action_type = ET.SubElement(action, "TYPE").text = "AddSetTransparent"
+        
+            r_color = ET.SubElement(action, "R").text = "255"
+            g_color = ET.SubElement(action, "G").text = "255"
+            b_color = ET.SubElement(action, "B").text = "255"    
+            
+The third rule method which visualizes all the building stories
+
 ```
 def create_xml_declaration(file_path_xml):
     
@@ -188,3 +234,62 @@ def create_xml_declaration(file_path_xml):
 ```
 
 Writing the XML file header.
+
+```
+def get_building_storey_and_spaces_zone():    
+    
+    zone_list = []
+    
+    for building_storey in building_stories:
+        for i in (building_storey.IsDecomposedBy):
+            for j in (i.RelatedObjects):
+                for k in (j.HasAssignments):
+                    if k.is_a('IfcRelAssignsToGroup'):
+                        zone_list.append([building_storey.Name, j.Name, k.RelatingGroup.Name])
+                
+    return zone_list  
+
+```
+
+Getting a list of the Building Storey, Name and Relaing Zone
+
+
+```
+def organize_zones_per_building_storey():
+
+    zone_list = []
+    
+    #create building storey and zone list
+    for i in get_building_storey_and_spaces_zone():
+        for j in building_storey_list:
+            if i[0].startswith(j): 
+                (zone_list.append([j, i[2]]))
+                
+       
+    #uniqify the list 
+    unique_data = [list(x) for x in set(tuple(x) for x in zone_list)]   
+    unique_zone_list = []
+    
+    for i in sorted(unique_data):
+        unique_zone_list.append((i))
+        
+        
+    #sort the zone list by building store
+    zone_dict = defaultdict(list)
+    
+    for k, v in unique_zone_list:
+        zone_dict[k].append(v)
+        
+    return zone_dict
+```
+
+Creating a zone dictionary
+
+
+
+```
+for k, v in organize_zones_per_building_storey().items():
+    create_xml(file_name='zone_filter_' + k + '.bcsv', building_storey=k, zone=v)  
+```
+
+Using the created dictionary to loop of the ```create_xml``` method.
