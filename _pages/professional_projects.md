@@ -319,5 +319,4 @@ The result through a filtered Smart View.
 Filtering all the building numbers and bundling of spaces is possible without any expensive IFC software. Just with basic Python knowledge and the help of BimCollabZoom! 
 
 
-The total script can be found here:
-https://github.com/C-Claus/Miscellaneous/blob/master/create_space_filter.py
+The total script can be found [here](https://github.com/C-Claus/Miscellaneous/blob/master/create_space_filter.py)
