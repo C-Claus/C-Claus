@@ -213,6 +213,9 @@ Creating a method for the second Smart View
             
 The third rule method which visualizes all the building stories
 
+![bcsv_screenshots_edit_smart_view](/images/bcsv_screenshot_smart_view_edit.png)
+The tree rules create a XML which BimCollabzoom can read.
+
 ```
 def create_xml_declaration(file_path_xml):
     
@@ -293,3 +296,17 @@ for k, v in organize_zones_per_building_storey().items():
 ```
 
 Using the created dictionary to loop of the ```create_xml``` method.
+
+Importing the XML files which BimCollabZoom calls 'bscv' files gives the following results
+
+![bcsv_smart_view_sets](/images/bcsv_smart_view_sets.png)
+The Smart View Sets
+
+![bcsv_smart_views](/images/bcsv_smart_views.PNG)
+The Smart Views 
+
+![bcsv_smart_views](/images/bcsv_smart_views.PNG)
+A filtered SmartView
+
+![bcsv_screenshot](/images/bcsv_screenshot.png)
+A filtered SmartView
