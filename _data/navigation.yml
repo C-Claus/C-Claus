@@ -1,3 +1,11 @@
+docs:
+  - title: Getting Started
+    children:
+      - title: "Professional Projects"
+        url: /docs/professional_projects/
+
+
+
 main:
   #- title: "Posts"
   #  url: /_posts/
@@ -10,7 +18,9 @@ main:
   #- title: "Meterkastlijsten"
   #  url: /_pages/bouwnummer_25
 
-
+sidebar:
+  nav: "docs"
+  
 #toc:
 #  - title: Group 1
 #    subfolderitems:
