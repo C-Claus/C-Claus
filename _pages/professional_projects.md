@@ -300,18 +300,22 @@ Using the created dictionary to loop of the ```create_xml``` method.
 Importing the XML files which BimCollabZoom calls 'bscv' files gives the following results
 
 ![bcsv_smart_view_sets](/images/bcsv_smart_view_sets.png)
+
 The Smart View Sets (XML files) imported  in BimCollabZoom
 
 
 ![bcsv_smart_views](/images/bcsv_smart_views.PNG)
+
 The Smart Views (XML file) imported in BimCollabZoom, what have happened is a filter for the IfcZone and colored coded it for each building storey.
 
 
 ![bcsv_smart_views](/images/bcsv_smart_views.PNG)
+
 The result through a filtered Smart View.
 
 
 ![bcsv_screenshot](/images/bcsv_screenshot.png)
+
 Filtering all the building numbers and bundling of spaces is possible without any expensive IFC software. Just with basic Python knowledge and the help of BimCollabZoom! 
 
 
