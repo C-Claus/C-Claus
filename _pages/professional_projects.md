@@ -214,7 +214,7 @@ Creating a method for the second Smart View
 The third rule method which visualizes all the building stories
 
 ![bcsv_screenshots_edit_smart_view](/images/bcsv_screenshot_smart_view_edit.png)
-The tree rules create a XML which BimCollabzoom can read.
+The script creates a XML which BimCollabzoom can read. 
 
 ```
 def create_xml_declaration(file_path_xml):
@@ -236,7 +236,7 @@ def create_xml_declaration(file_path_xml):
         xml_file.writelines(xml_data)    
 ```
 
-Writing the XML file header.
+Writing the XML file header. Please manually check if the XML declaration includes the corresponding bimcollabzoom version on your system.
 
 ```
 def get_building_storey_and_spaces_zone():    
@@ -254,7 +254,7 @@ def get_building_storey_and_spaces_zone():
 
 ```
 
-Getting a list of the Building Storey, Name and Relaing Zone
+Getting a list of the Building Storey, Name and Relating Zone
 
 
 ```
@@ -286,7 +286,7 @@ def organize_zones_per_building_storey():
     return zone_dict
 ```
 
-Creating a zone dictionary
+Creating a zone dictionary which will be used to loop over in the ```create_xml``` method
 
 
 
@@ -300,19 +300,19 @@ Using the created dictionary to loop of the ```create_xml``` method.
 Importing the XML files which BimCollabZoom calls 'bscv' files gives the following results
 
 ![bcsv_smart_view_sets](/images/bcsv_smart_view_sets.png)
-The Smart View Sets
+The Smart View Sets (XML files) imported  in BimCollabZoom
 
 
 ![bcsv_smart_views](/images/bcsv_smart_views.PNG)
-The Smart Views 
+The Smart Views (XML file) imported in BimCollabZoom, what have happened is a filter for the IfcZone and colored coded it for each building storey.
 
 
 ![bcsv_smart_views](/images/bcsv_smart_views.PNG)
-A filtered SmartView
+The result through a filtered Smart View.
 
 
 ![bcsv_screenshot](/images/bcsv_screenshot.png)
-A filtered SmartView
+Filtering all the building numbers and bundling of spaces is possible without any expensive IFC software. Just with basic Python knowledge and the help of BimCollabZoom! 
 
 
 The total script can be found here:
