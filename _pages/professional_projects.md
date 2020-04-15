@@ -302,11 +302,18 @@ Importing the XML files which BimCollabZoom calls 'bscv' files gives the followi
 ![bcsv_smart_view_sets](/images/bcsv_smart_view_sets.png)
 The Smart View Sets
 
+
 ![bcsv_smart_views](/images/bcsv_smart_views.PNG)
 The Smart Views 
 
+
 ![bcsv_smart_views](/images/bcsv_smart_views.PNG)
 A filtered SmartView
 
+
 ![bcsv_screenshot](/images/bcsv_screenshot.png)
 A filtered SmartView
+
+
+The total script can be found here:
+https://github.com/C-Claus/Miscellaneous/blob/master/create_space_filter.py
