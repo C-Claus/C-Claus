@@ -324,7 +324,7 @@ The total script can be found [here](https://github.com/C-Claus/Miscellaneous/bl
 -------
 
 # Adding-properties-to-an-IFC-file
-[< Back to top](##several-tooling-and-scripts-i-have-created)
+[< Back to top](#several-tooling-and-scripts-i-have-created)
 
 ```
 import ifcopenshell 
