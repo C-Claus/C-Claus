@@ -5,7 +5,7 @@
 * [Autodesk Revit Add-In](#basic-bim-checker-for-autodesk-revit)<br>
 * [Autodesk Navisworks Manage Tool](#basic-bim-checker-for-navisworks-manage)<br>
 * [Creating Smart Views for BimCollabZoom](#creating-xml-smart-views-for-bimcollabzoom)<br>
-* [Adding data to an existing IFC](#adding-data-to-an-existing-ifc)<br>
+* [Adding properties to an IFC file](#adding-properties-to-an-ifc-file)<br>
 * Creating QR codes from an IFC file<br>
 * Using IFC as a Document Management System<br>
 * Creating a folder structure from an Excel classification file<br>
@@ -320,3 +320,8 @@ Filtering all the building numbers and bundling of spaces is possible without an
 
 
 The total script can be found [here](https://github.com/C-Claus/Miscellaneous/blob/master/create_space_filter.py)
+
+-------
+
+# Adding-properties-to-an-IFC-file
+[< Back to top](#adding-properties-to-an-ifc-file)
