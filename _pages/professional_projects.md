@@ -324,4 +324,38 @@ The total script can be found [here](https://github.com/C-Claus/Miscellaneous/bl
 -------
 
 # Adding-properties-to-an-IFC-file
-[< Back to top](#adding-properties-to-an-ifc-file)
+[< Back to top](##several-tooling-and-scripts-i-have-created)
+
+```
+import ifcopenshell 
+
+file_name = 'C:\\Users\\CClaus\\Desktop\\Flat 11\\ruimtemodel_flat_11_chb.ifc'
+ifcfile = ifcopenshell.open(file_name)
+
+spaces = ifcfile.by_type('IfcSpace')
+building_stories = ifcfile.by_type('IfcBuildingStorey')
+owner_history = ifcfile.by_type('IfcOwnerHistory')[0]
+chb_url = 'https://coenhagedoornbouw.github.io/_pages/bouwnummer_'
+
+for building_storey in building_stories:
+    for ifcrelaggregates in building_storey.IsDecomposedBy:
+        for spaces in ifcrelaggregates.RelatedObjects:
+            if len(spaces.Name.split('.'))  == 3:
+                    nummer = (spaces.Name.split('.')[1])
+            else:
+                nummer = spaces.Name
+                
+            for ifc_relassigns_to_group in spaces.HasAssignments:
+                if ifc_relassigns_to_group.is_a('IfcRelAssignsToGroup'):
+                    if ifc_relassigns_to_group.RelatingGroup.Name == nummer:
+
+                        p = ifcfile.createIfcPropertySinglevalue("URL", "URL", ifcfile.create_entity("IfcText", chb_url + ifc_relassigns_to_group.RelatingGroup.Name))  
+                        property_set = ifcfile.createIfcPropertySet(spaces.GlobalId, owner_history, "Coen Hagedoorn Bouw", None, [p])             
+                        ifcfile.createIfcRelDefinesByProperties(spaces.GlobalId, owner_history, 'Name', 'Description', [spaces], property_set)
+                        
+                        break
+             
+ifcfile.write(str(file_name.replace('.ifc', '_bouwnummer.ifc')))   
+print (file_name.replace('.ifc', '_bouwnummer.ifc'))
+
+```
