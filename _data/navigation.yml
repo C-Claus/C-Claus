@@ -1,32 +1,20 @@
-docs:
-  - title: Getting Started
-    children:
-      - title: "Professional Projects"
-        url: /docs/professional_projects/
-
-
-
 main:
-  #- title: "Posts"
-  #  url: /_posts/
   - title: "Professional Projects"
     url: /_pages/professional_projects/
   - title: "Personal Projects"
     url: /_pages/personal_projects/
   - title: "Personalia"
     url: /_pages/about/
-  #- title: "Meterkastlijsten"
-  #  url: /_pages/bouwnummer_25
 
-sidebar:
-  nav: "docs"
-  
-#toc:
-#  - title: Group 1
-#    subfolderitems:
-#      - page: Thing 1
-#        url: /thing1.html
-#      - page: Thing 2
-#        url: /thing2.html
-#      - page: Thing 3
-#        url: /thing3.html
+
+#docs:
+#  - title: Getting Started
+#    children:
+#      - title: "Professional Projects"
+#        url: /docs/professional_projects/
+
+
+
+
+
+
