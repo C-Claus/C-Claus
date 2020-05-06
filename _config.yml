@@ -65,7 +65,7 @@ author:
       url: "https://c-claus.github.io/"
     - label: "Professional Projects"
       #icon: "fas fa-fw fa-link"
-      url- "https://c-claus.github.io/_pages/professional_projects/"
+      url: "https://c-claus.github.io/_pages/professional_projects/"
     - label: "Personal Projects"
       #icon: "fas fa-fw fa-link"
       url: "https://c-claus.github.io/_pages/personal_projects/"
