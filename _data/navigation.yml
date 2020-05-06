@@ -1,7 +1,7 @@
 main:
   - title: "Professional Projects"
-    url: /_pages/professional_projects/
+    url: /_pages/professional_projects
   - title: "Personal Projects"
-    url: /_pages/personal_projects/
+    url: /_pages/personal_projects
   - title: "Personalia"
-    url: /_pages/about/
+    url: /_pages/about
