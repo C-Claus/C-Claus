@@ -18,7 +18,6 @@ email:
 description: >- # this means to ignore newlines until "baseurl:"
   A Portfolio Website
   showcasing Python, IFC and Revit tooling
-  -
 #twitter_username: username
 #github_username: username
 minimal_mistakes_skin: default
@@ -61,8 +60,8 @@ author:
   name   : "C. Claus"
   avatar : "/assets/images/14906760.png"
   bio    : "-"
-  links:
-    - label: "Website"
+  links:    
+- label: "Website"
       #icon: "fas fa-fw fa-link"
       url: "https://c-claus.github.io/"
     - label: "Professional Projects"
@@ -74,6 +73,7 @@ author:
     - label: "Personalia"
       #icon: "fas fa-fw fa-link"
       url: "https://c-claus.github.io/_pages/about/"
+
     #- label: "Twitter"
     #  icon: "fab fa-fw fa-twitter-square"
     #  url: "https://twitter.com/"
