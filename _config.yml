@@ -60,7 +60,7 @@ author:
   avatar : "/assets/images/14906760.png"
   bio    : "-"
   links:    
-- label: "Website"
+    - label: "Website"
       #icon: "fas fa-fw fa-link"
       url: "https://c-claus.github.io/"
     - label: "Professional Projects"
