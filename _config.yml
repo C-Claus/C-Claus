@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title- C. Claus | Portfolio
-description- >- # this means to ignore newlines until "baseurl:"
+title: C. Claus | Portfolio
+description: >- # this means to ignore newlines until "baseurl:"
   A Portfolio Website
   showcasing Python, IFC and Revit tooling
 #twitter_username: username
@@ -60,16 +60,16 @@ author:
   avatar : "/assets/images/14906760.png"
   bio    : "-"
   links:    
-      label: "Website"
+    - label: "Website"
       #icon: "fas fa-fw fa-link"
       url: "https://c-claus.github.io/"
-      label: "Professional Projects"
+    - label: "Professional Projects"
       #icon: "fas fa-fw fa-link"
       url- "https://c-claus.github.io/_pages/professional_projects/"
-      label: "Personal Projects"
+    - label: "Personal Projects"
       #icon: "fas fa-fw fa-link"
       url: "https://c-claus.github.io/_pages/personal_projects/"
-      label: "Personalia"
+    - label: "Personalia"
       #icon: "fas fa-fw fa-link"
       url: "https://c-claus.github.io/_pages/about/"
 
