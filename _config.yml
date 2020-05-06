@@ -16,7 +16,9 @@
 title: C. Claus | Portfolio
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  A portfolio website
+  A Portfolio Website
+  showcasing Python, IFC and Revit tooling
+  -
 #twitter_username: username
 #github_username: username
 minimal_mistakes_skin: default
@@ -61,7 +63,7 @@ author:
   bio    : "Python & IFC enthusiast"
   links:
     - label: "Website"
-      icon: "fas fa-fw fa-link"
+      #icon: "fas fa-fw fa-link"
       url: "https://c-claus.github.io/"
     - label: "Professional Projects"
       #icon: "fas fa-fw fa-link"
