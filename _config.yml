@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "C. Claus"
   avatar : "/assets/images/14906760.png"
-  bio    : "Python & IFC enthusiast"
+  bio    : "-"
   links:
     - label: "Website"
       #icon: "fas fa-fw fa-link"
