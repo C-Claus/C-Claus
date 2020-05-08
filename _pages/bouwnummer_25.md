@@ -1,7 +1,7 @@
 Bouwnummer:  25
 
 
-1 | Meterkast | Reactie | Opmerking | OA
+1 | Meterkast | Reactie | OA | Opmerking
 ------ | --------------- | ----------------- | ------- | ----------
 1.1 | Bewoner inlichten leegmaken meterkast | Yes | Hoofdaannemer
 1.2 | Sleutel meterkast beschikbaar, en afgegeven | Niet beschikbaar |  Bewoner
