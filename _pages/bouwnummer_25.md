@@ -1,6 +1,8 @@
+# -
 Bouwnummer:  25
-
+[hoofdaannemer](#Hoofdaannemer)
 [onderaannemer A](#Onderaannemer-A)
+[onderaannemer B](#Onderaannemer-B)
 
 1 | Meterkast | Reactie | OA | Opmerking
 ------ | --------------- | ----------------- | ------- | ----------
@@ -207,10 +209,20 @@ Bouwnummer:  25
 14.5 | Opmerking? |  | 
 
 
-# Onderaannemer-A
 
+# Onderaannemer-A
+[< terug](#-)
 2 | Keuken | Reactie | OA | Opmerking
 ------ | --------------- | ----------------- | ------- | ----------
 2.3 | 00 geiser aanwezig? | No |  Onderaannemer A
 2.4 | 00 wasemkap aanwezig | Yes | Onderaannemer A
 2.11 | 50 cv-installatie aanwezig (hele woning) | Yes | Onderaannemer A
+
+
+# Onderaannemer-B
+[< terug](#-)
+2 | Keuken | Reactie | OA | Opmerking
+------ | --------------- | ----------------- | ------- | ----------
+2.5 | 10 asbest zeil of restanten aanwezig onder vloerafwerking | Zeil | Onderaannemer B
+2.6 | 10 verlaagd plafond aanwezig? | No | Onderaannemer B
+2.7 | 30 binnendeur en kozijn aanwezig keuken / halletje | Yes | Onderaannemer B
