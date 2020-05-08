@@ -207,7 +207,8 @@ Bouwnummer:  25
 14.5 | Opmerking? |  | 
 
 
-#Onderaannemer-A 
+# Onderaannemer-A
+
 2 | Keuken | Reactie | OA | Opmerking
 2.3 | 00 geiser aanwezig? | No |  Onderaannemer A
 2.4 | 00 wasemkap aanwezig | Yes | Onderaannemer A
