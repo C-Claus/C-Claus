@@ -1,11 +1,11 @@
 # -
 Bouwnummer:  25
 
-[hoofdaannemer](#Hoofdaannemer)
+[Hoofdaannemer](#Hoofdaannemer)
 
-[onderaannemer A](#Onderaannemer-A)
+[Onderaannemer A](#Onderaannemer-A)
 
-[onderaannemer B](#Onderaannemer-B)
+[Onderaannemer B](#Onderaannemer-B)
 
 1 | Meterkast | Reactie | OA | Opmerking
 ------ | --------------- | ----------------- | ------- | ----------
@@ -214,7 +214,9 @@ Bouwnummer:  25
 
 
 # Onderaannemer-A
+
 [< terug](#-)
+
 2 | Keuken | Reactie | OA | Opmerking
 ------ | --------------- | ----------------- | ------- | ----------
 2.3 | 00 geiser aanwezig? | No |  Onderaannemer A
@@ -223,7 +225,9 @@ Bouwnummer:  25
 
 
 # Onderaannemer-B
+
 [< terug](#-)
+
 2 | Keuken | Reactie | OA | Opmerking
 ------ | --------------- | ----------------- | ------- | ----------
 2.5 | 10 asbest zeil of restanten aanwezig onder vloerafwerking | Zeil | Onderaannemer B
