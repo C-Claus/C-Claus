@@ -3,25 +3,25 @@ Bouwnummer:  25
 
 1 | Meterkast | Reactie | Opmerking | OA
 ------ | --------------- | ----------------- | ------- | ----------
-1.1 | Bewoner inlichten leegmaken meterkast | Yes | 
-1.2 | Sleutel meterkast beschikbaar, en afgegeven | Niet beschikbaar | 
-1.3 | Ruimte voor meterkast opruimen | Yes | 
-1.4 | opmerking? |  | 
+1.1 | Bewoner inlichten leegmaken meterkast | Yes | Hoofdaannemer
+1.2 | Sleutel meterkast beschikbaar, en afgegeven | Niet beschikbaar |  Bewoner
+1.3 | Ruimte voor meterkast opruimen | Yes | Hoofdaannemer
+1.4 | opmerking? |  | Hoofdaannemer
 
 2 | Keuken | Reactie | Opmerking | OA
 ------ | --------------- | ----------------- | ------- | ----------
-2.1 | 00 schimmelvorming zichtbaar op wanden/plafonds | No | 
-2.2 | 00 Indien bestaande keuekn open is naar woonkamer, hoe? | No | 
-2.3 | 00 geiser aanwezig? | No | 
-2.4 | 00 wasemkap aanwezig | Yes | 
-2.5 | 10 asbest zeil of restanten aanwezig onder vloerafwerking | Zeil | 
-2.6 | 10 verlaagd plafond aanwezig? | No | 
-2.7 | 30 binnendeur en kozijn aanwezig keuken / halletje | Yes | 
-2.8 | 30 pas- en arm schaven houten binnendeur keuken / halletje | No | 
-2.9 | 30 vervangen hang- en sluitwerk, binnendeurslot keuken/halletje | No | 
-2.10 | 30 inkorten binnendeur i.v.m. mechanische ventilatie | Yes | 
-2.11 | 50 cv-installatie aanwezig (hele woning) | Yes | 
-2.12 | Opmerking? |  | 
+2.1 | 00 schimmelvorming zichtbaar op wanden/plafonds | No | Hoofdaannemer
+2.2 | 00 Indien bestaande keuekn open is naar woonkamer, hoe? | No | Hoofdaannemer
+2.3 | 00 geiser aanwezig? | No |  Onderaannemer A
+2.4 | 00 wasemkap aanwezig | Yes | Onderaannemer A
+2.5 | 10 asbest zeil of restanten aanwezig onder vloerafwerking | Zeil | Onderaannemer B
+2.6 | 10 verlaagd plafond aanwezig? | No | Onderaannemer B
+2.7 | 30 binnendeur en kozijn aanwezig keuken / halletje | Yes | Onderaannemer B
+2.8 | 30 pas- en arm schaven houten binnendeur keuken / halletje | No | Hoofdaannemer
+2.9 | 30 vervangen hang- en sluitwerk, binnendeurslot keuken/halletje | No | Hoofdaannemer
+2.10 | 30 inkorten binnendeur i.v.m. mechanische ventilatie | Yes | Hoofdaannemer
+2.11 | 50 cv-installatie aanwezig (hele woning) | Yes | Onderaannemer A
+2.12 | Opmerking? |  | Hoofdaannemer
 
 3 | Halletje (bkt) | Reactie | Opmerking | OA
 ------ | --------------- | ----------------- | ------- | ----------
