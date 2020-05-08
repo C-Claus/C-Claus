@@ -8,7 +8,7 @@ Bouwnummer:  25
 1.3 | Ruimte voor meterkast opruimen | Yes | Hoofdaannemer
 1.4 | opmerking? |  | Hoofdaannemer
 
-2 | Keuken | Reactie | Opmerking | OA
+2 | Keuken | Reactie | OA | Opmerking
 ------ | --------------- | ----------------- | ------- | ----------
 2.1 | 00 schimmelvorming zichtbaar op wanden/plafonds | No | Hoofdaannemer
 2.2 | 00 Indien bestaande keuekn open is naar woonkamer, hoe? | No | Hoofdaannemer
