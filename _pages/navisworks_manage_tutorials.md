@@ -4,16 +4,16 @@
     1. [User Interface](#user-interface)
 3. [Project Viewing](#project viewing)
 
-## This is the introduction <a name="inleiding"></a>
+## Inleiding <a name="inleiding"></a>
 Some introduction text, formatted in heading 2 style
 
-## Some paragraph <a name="algemeen"></a>
+## Algemeen <a name="algemeen"></a>
 The first paragraph text
 
-### Sub paragraph <a name="user-interface"></a>
+### User Interface <a name="user-interface"></a>
 This is a sub paragraph, formatted in heading 3 style
 
-## Another paragraph <a name="project-viewing"></a>
+## Project Viewing <a name="project-viewing"></a>
 The second paragraph text
 
 
