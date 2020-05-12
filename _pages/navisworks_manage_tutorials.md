@@ -1,4 +1,4 @@
-# Table of contents
+# Inhoudsopgave
 1. [Inleiding](#inleiding)
 2. [Algmeen](#algemeen)
     1. [User Interface](#user-interface)
@@ -8,6 +8,7 @@
 Some introduction text, formatted in heading 2 style
 
 ## Algemeen <a name="algemeen"></a>
+[< terug](#inhoudsopgave)
 The first paragraph text
 
 ### User Interface <a name="user-interface"></a>
