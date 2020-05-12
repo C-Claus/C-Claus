@@ -2,10 +2,11 @@
 1. [Inleiding](#inleiding)
 2. [Algmeen](#algemeen)
     1. [User Interface](#user-interface)
-3. [Project Viewing](#project viewing)
+3. [Project Viewing](#project-viewing)
 
 ## Inleiding <a name="inleiding"></a>
 [< terug](#inhoudsopgave)
+
 Some introduction text, formatted in heading 2 style
 
 ## Algemeen <a name="algemeen"></a>
