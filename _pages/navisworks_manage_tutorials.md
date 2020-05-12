@@ -1,6 +1,6 @@
 # Inhoudsopgave
 1. [Inleiding](#inleiding)
-2. [Algmeen](#algemeen)
+2. [Algemeen](#algemeen)
     1. [User Interface](#user-interface)
 3. [Project Viewing](#project-viewing)
 
