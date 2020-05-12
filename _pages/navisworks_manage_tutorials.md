@@ -1,19 +1,19 @@
 # Table of contents
-1. [Introduction](#introduction)
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
+1. [Introduction](#inleiding)
+2. [Some paragraph](#algmeen)
+    1. [Sub paragraph](#user interface)
+3. [Another paragraph](#project viewing)
 
-## This is the introduction <a name="introduction"></a>
+## This is the introduction <a name="inleiding"></a>
 Some introduction text, formatted in heading 2 style
 
-## Some paragraph <a name="paragraph1"></a>
+## Some paragraph <a name="algmeen"></a>
 The first paragraph text
 
-### Sub paragraph <a name="subparagraph1"></a>
+### Sub paragraph <a name="user interface"></a>
 This is a sub paragraph, formatted in heading 3 style
 
-## Another paragraph <a name="paragraph2"></a>
+## Another paragraph <a name="project viewing"></a>
 The second paragraph text
 
 
