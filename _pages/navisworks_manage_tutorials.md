@@ -5,16 +5,22 @@
 3. [Project Viewing](#project viewing)
 
 ## Inleiding <a name="inleiding"></a>
+[< terug](#inhoudsopgave)
 Some introduction text, formatted in heading 2 style
 
 ## Algemeen <a name="algemeen"></a>
 [< terug](#inhoudsopgave)
+
 The first paragraph text
 
 ### User Interface <a name="user-interface"></a>
+[< terug](#inhoudsopgave)
+
 This is a sub paragraph, formatted in heading 3 style
 
 ## Project Viewing <a name="project-viewing"></a>
+[< terug](#inhoudsopgave)
+
 The second paragraph text
 
 
