@@ -3,9 +3,9 @@ Bouwnummer:  25
 
 [Hoofdaannemer](#Hoofdaannemer)
 
-[onderaannemer-A](#onderaannemer A)
+[onderaannemer-A](#onderaannemer-A)
 
-[onderaannemer-B](#onderaannemer B)
+[onderaannemer-B](#onderaannemer-B)
 
 1 | Meterkast | Reactie | OA | Opmerking
 ------ | --------------- | ----------------- | ------- | ----------
