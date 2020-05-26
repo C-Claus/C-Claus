@@ -3,9 +3,9 @@ Bouwnummer:  25
 
 [Hoofdaannemer](#Hoofdaannemer)
 
-[onderaannemer-A](#onderaannemer-A)
+[onderaannemer-A](#onderaannemer A)
 
-[onderaannemer-B](#onderaannemer-B)
+[onderaannemer-B](#onderaannemer B)
 
 1 | Meterkast | Reactie | OA | Opmerking
 ------ | --------------- | ----------------- | ------- | ----------
@@ -213,7 +213,7 @@ Bouwnummer:  25
 
 
 
-# onderaannemer-A
+# onderaannemer A
 
 [< terug](#-)
 
@@ -224,7 +224,7 @@ Bouwnummer:  25
 2.11 | 50 cv-installatie aanwezig (hele woning) | Yes | Onderaannemer A
 
 
-# onderaannemer-B
+# onderaannemer B
 
 [< terug](#-)
 
