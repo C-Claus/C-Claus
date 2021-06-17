@@ -6,10 +6,7 @@
 * [Autodesk Navisworks Manage Tool](#basic-bim-checker-for-navisworks-manage)<br>
 * [Creating Smart Views for BimCollabZoom](#creating-xml-smart-views-for-bimcollabzoom)<br>
 * [Adding properties to an IFC file](#adding-properties-to-an-ifc-file)<br>
-* Creating QR codes from an IFC file<br>
-* Using IFC as a Document Management System<br>
-* Creating a folder structure from an Excel classification file<br>
-* Getting and validing Quantities from an IFC file<br>
+
 
 -------
 
